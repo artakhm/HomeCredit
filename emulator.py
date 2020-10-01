@@ -6,7 +6,7 @@ import pandas as pd
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', type=str, default='model.pickle', help='model for prediction')
-    parser.add_argument('--data', type=str, default='data.pickle', help='data to predict')
+    parser.add_argument('--data', type=str, default='data.csv', help='data to predict')
     parser.add_argument('--out', type=str, default='prediction.csv', help='where to save prediction')
     return parser.parse_args()
 
